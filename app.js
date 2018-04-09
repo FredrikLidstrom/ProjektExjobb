@@ -1,4 +1,4 @@
-function knappklick()
+function knappKlick()
 {
     alert("hello world");
 }
