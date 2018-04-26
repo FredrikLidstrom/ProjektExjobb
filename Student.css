@@ -1,70 +1,136 @@
-body{
-    background-color:white ;
 
-}
+
 header{
-    background-color: white
-}
+    background-color: white;
+   }
 
-.headerinfo
+footer{
+    background-color:black;
+    width: auto;
+    height:auto;
+} 
+body
 {
-
+    background-color:white;
+    overflow: hidden;
+    margin:0px;
+    margin-top: 5px;
+   
 }
+ul
+{
+    list-style-type: none;
+    overflow:hidden;
+    background-color: black;
+}
+
+li{
+    float: left;
+   
+}
+
+li a, .DropLink
+{
+   
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+}
+
+li a.active{
+    background-color: red;
+}
+
+li .Search
+{
+    float:right;
+    position: absolute;
+    left:1000px; 
+   
+}
+
+li a:hover, .dropdown-items:hover .DropLink
+{
+    background-color: red;
+}
+
+
+li.dropdown-items
+{
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color:white; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover
+{
+    background-color: red;
+}
+
+.dropdown-items:hover .dropdown-content
+{
+    display:block;
+} 
+
+.InloggLabel
+{
+    position: absolute;
+    top:10px;
+    right:200px;
+}
+
 .Logo
 {
     position:relative;
     left:50px;
 }
-.navigation
-{
-    background-color: #333;
-    overflow: hidden;
-    
-}
-.navigation a
-{
- position: relative;
- left: 50px;
- float: left;
- display: block;
- color: #f2f2f2;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
- font-size: 17px;
 
-}
-.navigation a:hover
-{
-    background-color: red;
-    color:white;
-}
-.navigation .Search{
-    float:right;
-    position:relative;
-    right:50px;
-}
-
-.navigation input#sök{
-  
+li input#sök{
     padding:6px;
     border: none;
     margin-top: 8px;
     font-size: 17px;
 }
-.navigation .Search button
-{
-    float: right;
-    padding: 6px ;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
+
+li .Search button{
+    font-size:17px;
+    padding:6px;
+    position:relative;
+    border:none;
+    cursor:pointer;
+    background:white;
+  
 }
 
-.navigation .Search button:hover
+
+
+
+li .Search button:hover
 {
     background:red;
+} 
+
+footer .nav a{
+    color:white;
 }

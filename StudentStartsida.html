@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Student header/footer</title>
+    <title>Student</title>
     <link rel="stylesheet" href="Student.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap..-->
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="ICONS/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ICONS/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ICONS/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ICONS/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ICONS/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ICONS/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ICONS/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ICONS/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ICONS/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="ICONS/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ICONS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ICONS/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ICONS/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="ICONS/Favicon.ico" type="image/x-icon">
+   
 </head>
+
 <body>
     <header>
-        <!--Bild-->
-        <form class="headerinfo">
-            <div class="Logo"> 
-                <img src="Logo.jpg" alt="Örebro Universitet Exjobb Loga" style="width:300px;height:150px" usemap="ORULOGGA">
-                <map name="ORULOGGA"
-            </div>
-            <div class="navigation">
-                <a class="active" href="StudentStartsida.html">Startsida</a>
-                <a href="StudentProfil.html">Profil</a>
-                <a href="StudentMeddelande.html">Meddelande</a>
-                <a href="#LoggaUt">Logga ut</a>
-                
-                <div class="Search">
-                    <form class="SearchBar">
-                        <input type="text" id="sök"placeholder="Sök..."/> 
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                
-            </div>
-            <div>
-               
-            </div>
+        <div class="InloggLabel">
+            <label for="Inlogg">Inloggad...</label>
+        </div>
+        <div class="Logo">
+            <img src="Logo.jpg" alt="Örebro Universitet Exjobb Loga" style="width:250px;height:100px" usemap="ORULOGGA">
+            <map name="ORULOGGA">
+                <area alt="Örebro Universitet Logga" href="StudentStartsida.html" coords="916,370,1,6" shape="rect">
+            </map>
+        </div>
 
-        </form>
+        <div class="navigation">
+            <ul class="dropdown">
+                <li>
+                    <a class="active" href="StudentStartsida.html">Startsida</a>
+                </li>
+
+                <li>
+                    <a href="StudentProfil.html">Profil</a>
+                </li>
+
+                <li>
+                    <a href="StudentMeddelande.html">Meddelande</a>
+                </li>
+
+                <li class="dropdown-items">
+                    <a class="DropLink" href="javascript:void(0)">Hjälp</a>
+                    <div class="dropdown-content">
+                        <a href="#Support">Support</a>
+                        <a href="#QA">Q&amp;A</a>
+                    </div>
+                </li>
+
+
+
+                <li>
+                    <a href="#LoggaUt">Logga ut</a>
+                </li>
+                <li>
+                    <div class="Search">
+                        <form class="SearchBar">
+                            <input type="text" id="sök" placeholder="Sök..." />
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
     </header>
 
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>Grid system kommer vara här, hur det ser ut beror på vilken del man är på</h1>
+    </main>
+
+    <footer>
+        <hr>
+        <!--Social icons och svart bakgrund-->
+            <div class="footerdiv">
+                <nav class="nav">
+                    <img src="ORUL.png" alt="Örebro Universitet" style="width:50px;height:50px" usemap="ORU">
+                        <area shape="rect" coords="" href="oru.se" alt="Örebro Uniersitet Hemsida">
+                    <!-- <a href="https://www.oru.se/?">Örebro Universitet</a> -->
+                </nav>
+            </div>
+    </footer>
 </body>
+
+<!-- <img src="Logo.jpg" alt="Örebro Universitet Exjobb Loga" style="width:250px;height:100px" usemap="ORULOGGA">
+<map name="ORULOGGA">
+    <area alt="Örebro Universitet Logga" href="StudentStartsida.html" coords="916,370,1,6" shape="rect">
+</map> -->
 </html>
