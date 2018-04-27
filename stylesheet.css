@@ -6,12 +6,12 @@ header{
    }
 
 footer{
-    background-color: black;
+    background-color:grey;
     color:white;
     /* width: auto;
     height:auto; */
     box-sizing: border-box;  
-    height:450px;
+    height:400px;
 }
 .col
 {
@@ -21,8 +21,13 @@ footer{
 }
 .col a
 {
-    margin: 1px 40px;
-    
+    position:relative;
+    left:32%;
+    margin: 5px;
+}
+#h42
+{
+    text-align: center;
 }
 main
 {
@@ -34,8 +39,7 @@ body
     overflow-x: hidden;
     overflow-y: auto;
     margin:0px;
-    margin-top: 5px;
-   
+    margin-top: 5px; 
 }
 ul
 {
